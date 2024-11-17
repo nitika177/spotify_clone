@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+body{
+    background-color: black;
+    color:white;
+}
+
+
+ul li{
+    display: flex;
+    font-size: 20px;
+    font-weight: 900;
+    gap:15px;
+    padding: 10px;
+    
+}
+
+.logo{
+    padding: 10px;
+}
+
+
+.svg{
+    width: 30px;
+}
+
+.left{
+    display: block;
+    width: 400px;
+    margin:5px;
+    position: relative;
+    left: 0%;
+
+}
+
+.right{
+    width:90vw;
+   
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.home{
+    background-color:rgb(35, 34, 34);
+    border-radius: 10px;
+    
+}
+
+.library{
+    background-color: rgb(35, 34, 34);
+    height:80vh;
+    border-radius: 10px;
+    margin-top: 5px;
+
+}
+
+.heading{
+    display: flex;
+    gap:10px;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px;
+
+}
+.heading img{
+    width:25px;
+}
+.urls{
+    display: flex;
+    gap:5px;
+    
+    
+    
+}
+.urls a
+{
+    color: rgb(111, 107, 107);
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+}
+.footer{
+
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+.library{
+    position: relative;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:15px;
+    position: sticky;
+    top:0px;
+    background-color:rgb(35, 34, 34) ;
+    border-radius: 10px;
+    margin: 5px;
+    
+}
+
+.lr{
+    display: flex;
+}
+
+.arrow{
+    width:30px;
+    filter:invert(1);
+   
+
+    
+    border-radius: 15px;
+}
+
+.arrows{
+    background-color: black;
+    border-radius: 15px;
+    gap:5px;
+}
+.buttons{
+    font-family: "Roboto", sans-serif;
+    
+    
+    
+}
+.buttons button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+
+
+}
+.buttons :first-child{
+    background-color: rgb(22,22,22);
+    color:gray;
+}
+
+.cointainer{
+    width:175px;
+    
+    height:240px;
+    font:15px;
+    
+    margin:5px;
+    border-radius: 5px;
+}
+
+.hamburger{
+    display: none;
+}
+   
+
+.cointainer img{
+    width:100%;
+
+}
+
+.wriiten{
+    width:100%;
+    
+   
+}
+
+.cardcointainer{
+    display: flex;
+    width:100%;
+    
+    flex-wrap: wrap ;
+    max-height:60vh;
+    overflow-y: scroll;
+}
+
+.spotifyplaylist{
+    margin:20px;
+    
+}
+
+.play{
+    filter: invert(1);
+    
+    background-color: green;
+    width:10px;
+    border-radius: 5px;
+    
+}
+
+
+
+
+
+/* Scrollbar styles for webkit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Background color of the track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555; /* Color of the scrollbar handle */
+    border-radius: 10px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Color of the scrollbar handle when hovered */
+}
+
+/* Firefox scrollbar styles */
+* {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #555 #1a1a1a; /* Handle color and track color */
+}
+
+/* CSS for custom scrollbar in Internet Explorer and Edge */
+body {
+    -ms-overflow-style: scrollbar; /* Show scrollbar for IE and Edge */
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+    border: 3px solid #1a1a1a; /* Padding around handle */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+
+.playbar{
+    background-color: green;
+    width:100%;
+    height:35px;
+    text-align: center;
+    border: 2px solid rgb(6, 26, 6);
+    border-radius: 10px;
+    position: fixed;
+    bottom: 5px;
+}
+
+.playbar img{
+    width:30px;
+    
+
+}
+
+
+.songsslist ul li{
+    display: flex;
+    font-size: 15px;
+    border: solid white 1px;
+    margin:10px;
+    border-radius:2px ;
+    justify-content: space-between;
+    font-weight: 400;
+    cursor: pointer;
+    width:350px;
+}
+
+.songwithicon{
+    display: flex;
+    gap:5px;
+    
+}
+
+.playthissong{
+    display: flex;
+    align-items: center;
+    
+}
+
+.playthissong img{
+    width:30px;
+}
+
+.playthissong div{
+    width:35px;
+}
+
+.musicinfo{
+    width:70%;
+}
+
+
+.seekbar{
+    position: relative;
+    bottom: 0px;
+    border:1px solid white;
+    width:98%;
+    margin: auto;
+    height:0.5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.circle{
+    background-color: white;
+
+    top: -3px;
+    position: relative;
+    width:8px;
+    border-radius: 4px;
+    height: 8px;
+    left:0%;
+    transition:left;
+}
+
+.playbar img{
+    cursor: pointer;
+}
+
+.songname , .songtime{
+    color: white;
+    
+    
+}
+
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.musicicon{
+    width:20px;
+
+}
+
+.closee{
+    display: none;
+}
+
+
+
+@media(max-width:1440px){
+
+    .left{
+        position: absolute;
+        left:-120%;
+        z-index: 1;
+    }
+
+    .right{
+        width: 100vw;
+    }
+    .spotifyplaylist{
+        position: relative;
+        margin:0px;
+        width: 100%;
+         
+    }
+    .cardcointainer{
+        justify-content: center;
+        padding:px 12px;
+    }
+    .cointainer{
+        width:300px;
+        padding: 63px 9px;
+       
+    }
+    .hamburger{
+        display:inline;
+        
+    }
+
+    .closee{
+        display: inline;
+        position: absolute;
+        top: 9px;
+        right: 14px;
+    }
+    
+
+    
+}
+
+
